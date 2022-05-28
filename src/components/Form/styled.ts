@@ -13,6 +13,7 @@ export const StyledTextArea = styled(Field)`
   margin: 2rem 0;
   font-family: ${(props) => props.theme.fonts.default};
   font-size: 1.8rem;
+  max-width: 80rem;
   font-weight: 700;
   color: ${(props) => props.theme.colors.black};
 
@@ -23,4 +24,10 @@ export const StyledTextArea = styled(Field)`
 
 export const StyledInput = styled(StyledTextArea)`
   padding: 2rem 2rem 1.5rem;
+`
+
+export const StyledForm = styled.div`
+  display: flex;
+  margin: 5rem;
+  flex-direction: column;
 `

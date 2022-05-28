@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { Button } from '@/components/Button'
 import { IUser } from '@/hooks/useUser'
 import { Formik, Form } from 'formik'
-import { StyledInput, StyledLabel } from '@/components/Form/styled'
+import { StyledForm, StyledInput, StyledLabel } from '@/components/Form/styled'
 import { initialValues } from '@/components/Form/data'
 
 interface IFormAddUser {
@@ -27,15 +27,19 @@ export const FormAddUser: FC<IFormAddUser> = ({
       }}
     >
       <Form>
-        <StyledLabel htmlFor="name">Name</StyledLabel>
-        <StyledInput id="name" name="name" placeholder="Enter your Name" />
-        <StyledLabel htmlFor="username">Username</StyledLabel>
-        <StyledInput
-          id="username"
-          name="username"
-          placeholder="Enter your Username"
-        />
-        <Button mt="2rem" type="submit" label="Submit" />
+        <StyledForm>
+          <StyledLabel htmlFor="name">Name</StyledLabel>
+          <StyledInput id="name" name="name" placeholder="Enter your Name" />
+          <StyledLabel htmlFor="username">Username</StyledLabel>
+          <StyledInput
+            id="username"
+            name="username"
+            placeholder="Enter your Username"
+          />
+          <div>
+            <Button mt="2rem" type="submit" label="Add User" />
+          </div>
+        </StyledForm>
       </Form>
     </Formik>
   )

@@ -20,7 +20,7 @@ export const useUser = () => {
   const addUser = async (id: number, name: string, username: string) => {
     const post = { id: id, name: name, username: username }
     await axios.post(api, post)
-    setUsers([post, ...users])
+    setUsers([...users, post])
   }
 
   const deleteUser = async (id: number) => {
