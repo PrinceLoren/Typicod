@@ -19,7 +19,6 @@
         "jsx": "never"
       }
     ],
-    "quotes": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -36,19 +35,15 @@
       "plugins": ["@typescript-eslint/eslint-plugin"],
       "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
       "rules": {
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "off",
-        "no-use-before-define": [0],
-        "@typescript-eslint/no-use-before-define": [1],
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/quotes": [
-          2,
-          "backtick",
-          {
-            "avoidEscape": true
-          }
-        ]
+        "absolute-import/no-relative-path": 0,
+        "camelcase": 0,
+        "@typescript-eslint/camelcase": 0,
+        "id-length": 0,
+        "react/no-array-index-key": 0,
+        "react/forbid-dom-props": 0,
+        "@typescript-eslint/naming-convention": 0,
+        "react/require-default-props": 0,
+        "no-void": 0
       }
     }
   ]
